@@ -36,19 +36,15 @@ function ch3(){
        RespostaErrada("c1")
     }
 }
-function ch4(){
-    var ex1 = document.getElementById("e1").innerHTML
-    if (ex1 ==='2510'){
-        RespostaCorreta("c1");
-    }else{ 
-       RespostaErrada("c1")
-    }
+function ch4(){    
+	confereValor('2510');
 }
-function ch5(){
-    var ex1 = document.getElementById("e2").innerHTML
-    if (ex1 ==='2460'){
-        RespostaCorreta("c2");
-    }else{ 
-       RespostaErrada("c2")
-    }
+function confereValor(valor){
+	var ex1 = document.getElementById("e1").innerHTML;
+    if (ex1 === valor) RespostaCorreta("c1"); 
+	else  RespostaErrada("c1");    	
+}
+
+function ch5(){    
+
 }
